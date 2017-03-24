@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_actividad_fisica" />
+
+    <TextView
+        android:id="@+id/textView_al_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/actividad_fisica"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_li_can_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="24dp"
+        android:text="@string/gasto_energetico_basal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_ETA_AF"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/textView_li_can_3"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView_li_nom_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/editText_ETA_AF"
+        android:text="@string/actividad_fisica"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_AF_AF"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/textView_li_nom_2"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView_li_me_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_AF_AF"
+        android:layout_alignBottom="@+id/editText_AF_AF"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textView_al_nombre"
+        android:text="@string/porcentaje"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonAF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_AF_AF"
+        android:layout_below="@+id/editText_AF_AF"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_selector"
+        android:onClick="calcularActividadFisica"
+        android:text="@string/calcular"
+        android:textColor="@color/list_item_title" />
+
+    <EditText
+        android:id="@+id/editText_Resultado_AF"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/buttonAF"
+        android:layout_below="@+id/buttonAF"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>

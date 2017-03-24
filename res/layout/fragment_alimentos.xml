@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cell_shape_green" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spin_lactios"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_li_nom_2"
+            android:layout_below="@+id/textView_al_nombre"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/my_textedit_style" />
+
+        <TextView
+            android:id="@+id/textView_al_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Alimentos"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView_li_nom_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView_al_nombre"
+            android:layout_marginLeft="21dp"
+            android:text="Lacteos"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView_li_can_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_lactios"
+            android:layout_below="@+id/spin_lactios"
+            android:text="Fruta"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spin_frutas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_li_can_3"
+            android:layout_below="@+id/textView_li_can_3"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/my_textedit_style" />
+
+        <TextView
+            android:id="@+id/textView_li_me_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_frutas"
+            android:layout_below="@+id/spin_frutas"
+            android:text="Verduras"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spin_verduras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_li_me_3"
+            android:layout_below="@+id/textView_li_me_3"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/my_textedit_style" />
+
+        <TextView
+            android:id="@+id/textView_li_nom_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_verduras"
+            android:layout_below="@+id/spin_verduras"
+            android:text="Azucares"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spin_asg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_li_nom_3"
+            android:layout_alignRight="@+id/spin_verduras"
+            android:layout_below="@+id/textView_li_nom_3"
+            android:background="@drawable/my_textedit_style" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_li_nom_2"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_alimentos" />
+
+        <TextView
+            android:id="@+id/textView_li_me_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_asg"
+            android:layout_below="@+id/spin_asg"
+            android:text="Leguminosas"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spin_legumbres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_asg"
+            android:layout_below="@+id/textView_li_me_4"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/my_textedit_style" />
+
+        <TextView
+            android:id="@+id/textView_li_nom_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_legumbres"
+            android:layout_below="@+id/spin_legumbres"
+            android:text="Cereales"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spin_csg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_li_nom_4"
+            android:layout_below="@+id/textView_li_nom_4"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/my_textedit_style" />
+
+        <TextView
+            android:id="@+id/textView_li_me_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_csg"
+            android:layout_below="@+id/spin_csg"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:text="Alimentos de Origen Animal"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spin_aoa_muy_poca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_li_me_5"
+            android:layout_below="@+id/textView_li_me_5"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/my_textedit_style" />
+
+        <TextView
+            android:id="@+id/textView_li_can_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_aoa_muy_poca"
+            android:layout_below="@+id/spin_aoa_muy_poca"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:text="Aceites y Grasas"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spin_ag_cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_li_can_6"
+            android:layout_below="@+id/textView_li_can_6"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/my_textedit_style" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_ag_cp"
+            android:layout_below="@+id/spin_ag_cp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/cell_shape"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Desayuno" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colación Matutina" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comida" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colación vespertina" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_ag_cp"
+            android:layout_below="@+id/radioGroup1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/cell_shape"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radio10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Lunes" />
+
+            <RadioButton
+                android:id="@+id/radio11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Martes" />
+
+            <RadioButton
+                android:id="@+id/radio12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miercoles" />
+
+            <RadioButton
+                android:id="@+id/radio13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Jueves" />
+
+            <RadioButton
+                android:id="@+id/radio14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viernes" />
+
+            <RadioButton
+                android:id="@+id/radio15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sabadado" />
+
+            <RadioButton
+                android:id="@+id/radio16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Domingo" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_almacenar_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_ag_cp"
+            android:layout_below="@+id/radioGroup2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/button_selector"
+            android:text="Almacenar Menu"
+            android:textColor="@color/list_item_title" />
+
+        <Button
+            android:id="@+id/button_reporte_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_ag_cp"
+            android:layout_below="@+id/button_almacenar_menu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/button_selector"
+            android:text="Ver Reporte Menu"
+            android:textColor="@color/list_item_title" />
+        
+        <Button
+            android:id="@+id/button_borrar_todos_menus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spin_ag_cp"
+            android:layout_below="@+id/button_reporte_menu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/editText_lac"
+            android:background="@drawable/button_selector"
+            android:text="Borrar Reporte de Menu"
+            android:textColor="@color/list_item_title" />
+
+        <EditText
+            android:id="@+id/editText_lac"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/textView_li_can_3"
+            android:layout_alignTop="@+id/spin_lactios"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/spin_lactios"
+            android:background="@drawable/my_textedit_style"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditText_fru"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/textView_li_me_3"
+            android:layout_alignLeft="@+id/editText_lac"
+            android:layout_below="@+id/textView_li_can_3"
+            android:background="@drawable/my_textedit_style"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditText_ver"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/textView_li_nom_3"
+            android:layout_alignLeft="@+id/EditText_fru"
+            android:layout_alignTop="@+id/spin_verduras"
+            android:background="@drawable/my_textedit_style"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditText_az"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/EditText_ver"
+            android:layout_alignTop="@+id/spin_asg"
+            android:background="@drawable/my_textedit_style"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditText_legu"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/textView_li_nom_4"
+            android:layout_alignLeft="@+id/EditText_az"
+            android:layout_alignTop="@+id/spin_legumbres"
+            android:background="@drawable/my_textedit_style"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditText_cer"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/EditText_legu"
+            android:layout_alignTop="@+id/spin_csg"
+            android:background="@drawable/my_textedit_style"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditText_aoa"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/EditText_cer"
+            android:layout_alignTop="@+id/spin_aoa_muy_poca"
+            android:background="@drawable/my_textedit_style"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditText_acei"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/spin_ag_cp"
+            android:layout_alignLeft="@+id/EditText_aoa"
+            android:layout_alignTop="@+id/spin_ag_cp"
+            android:background="@drawable/my_textedit_style"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="text" />
+    </RelativeLayout>
+    
+    </HorizontalScrollView>
+
+</ScrollView>

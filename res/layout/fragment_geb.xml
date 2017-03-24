@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_peso_ideal" />
+
+    <TextView
+        android:id="@+id/textView_al_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/gasto_energetico_basal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_li_nom_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="18dp"
+        android:text="@string/peso_corregido"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_PA_GEB"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView_li_nom_2"
+        android:layout_below="@+id/textView_li_nom_2"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_li_can_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_PA_GEB"
+        android:layout_below="@+id/editText_PA_GEB"
+        android:layout_marginTop="15dp"
+        android:text="@string/talla"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_Talla_GEB"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView_li_can_3"
+        android:layout_below="@+id/textView_li_can_3"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/editText_Edad_GEB"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView_li_me_3"
+        android:layout_below="@+id/textView_li_me_3"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView_li_me_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_Talla_GEB"
+        android:layout_below="@+id/editText_Talla_GEB"
+        android:layout_marginTop="25dp"
+        android:text="@string/edad"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_li_nom_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_PA_GEB"
+        android:layout_alignBottom="@+id/editText_PA_GEB"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/editText_PA_GEB"
+        android:text="@string/kg"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_li_can_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_Talla_GEB"
+        android:layout_alignBottom="@+id/editText_Talla_GEB"
+        android:layout_alignLeft="@+id/textView_li_nom_3"
+        android:text="@string/cm"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_li_me_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_Edad_GEB"
+        android:layout_alignBottom="@+id/editText_Edad_GEB"
+        android:layout_alignLeft="@+id/textView_li_can_4"
+        android:text="@string/annos"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editText_Edad_GEB"
+        android:layout_below="@+id/editText_Edad_GEB"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/button_selector"
+        android:onClick="calcularGEBHombre"
+        android:text="@string/calcular_hombre"
+        android:textColor="@color/list_item_title" />
+
+    <EditText
+        android:id="@+id/editText_Resultado_GEB"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/textView_li_nom_3"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editText_Resultado_GEB"
+        android:layout_alignRight="@+id/textView_li_nom_3"
+        android:background="@drawable/button_selector"
+        android:onClick="calcularGEBMujer"
+        android:text="@string/calcular_mujer"
+        android:textColor="@color/list_item_title" />
+
+</RelativeLayout>

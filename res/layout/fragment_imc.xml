@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_imc" />
+
+    <TextView
+        android:id="@+id/textView_li_can_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_PA_IMC"
+        android:layout_below="@+id/editText_PA_IMC"
+        android:layout_marginTop="30dp"
+        android:text="@string/talla"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_li_nom_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_Talla_IMC"
+        android:layout_alignBottom="@+id/editText_Talla_IMC"
+        android:layout_alignLeft="@+id/textView_li_me_3"
+        android:text="@string/m"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_al_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_li_nom_2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/imc"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_li_nom_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="19dp"
+        android:text="@string/peso_actual"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_PA_IMC"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView_li_nom_2"
+        android:layout_below="@+id/textView_li_nom_2"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/editText_Talla_IMC"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView_li_can_3"
+        android:layout_below="@+id/textView_li_can_3"
+        android:layout_toLeftOf="@+id/textView_li_me_3"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editText_Talla_IMC"
+        android:layout_below="@+id/buttonCalcular"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/textView_li_me_3"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView_li_me_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_PA_IMC"
+        android:layout_alignBottom="@+id/editText_PA_IMC"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/editText_PA_IMC"
+        android:text="@string/kg"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editText_Talla_IMC"
+        android:layout_below="@+id/editText_Talla_IMC"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/textView_li_me_3"
+        android:background="@drawable/button_selector"
+        android:onClick="calcularIMC"
+        android:text="@string/calcular"
+        android:textColor="@color/list_item_title" />
+
+</RelativeLayout>

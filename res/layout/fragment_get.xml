@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_get" />
+
+    <TextView
+        android:id="@+id/textView_al_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/get"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_li_nom_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="22dp"
+        android:text="@string/gasto_energetico_basal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_GEB_GET"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView_li_nom_2"
+        android:layout_below="@+id/textView_li_nom_2"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_li_can_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_GEB_GET"
+        android:layout_below="@+id/editText_GEB_GET"
+        android:layout_marginTop="14dp"
+        android:text="@string/eta"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_ETA_GET"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView_li_can_3"
+        android:layout_below="@+id/textView_li_can_3"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView_li_me_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_ETA_GET"
+        android:layout_below="@+id/editText_ETA_GET"
+        android:layout_marginTop="19dp"
+        android:text="@string/actividad_fisica"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_AF_GET"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView_li_me_3"
+        android:layout_below="@+id/textView_li_me_3"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_AF_GET"
+        android:layout_alignRight="@+id/editText_AF_GET"
+        android:layout_below="@+id/editText_AF_GET"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/calcular"
+        android:textColor="@color/list_item_title" 
+        android:onClick="calcularGET"/>
+
+    <EditText
+        android:id="@+id/editText_Resultado_GET"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_textedit_style"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>
